@@ -8,10 +8,9 @@ function Header() {
     )
 }
 
-function Page() {
+function MainContent() {
     return (
         <div>
-            <Header />
             <h1>Reasons I'm excited to learn React</h1>
             <ol>
                 <li>It's a popular library.</li>
@@ -19,9 +18,24 @@ function Page() {
                 <li>People love using React.</li>
                 <li>I want to become a better developer through using React.</li>
             </ol>
-            <footer>
-                <small>© 2023 Griffin development.  All rights reserved</small>
-            </footer>
+        </div>
+    )
+}
+
+function Footer() {
+    return (
+        <footer>
+            <small>© 2023 Griffin development.  All rights reserved</small>
+        </footer>
+    )
+}
+
+function Page() {
+    return (
+        <div>
+            <Header />
+            <MainContent />
+            <Footer />
         </div>
     )
 }
