@@ -1,8 +1,15 @@
+import './Page.css';
+
 function Header() {
     return (
         <header>
-            <nav>
-                <img src="./logo192.png" width="40px" alt="logo" />
+            <nav className="nav">
+                <img className="nav-logo" src="./logo192.png" alt="logo" />
+                <ul className="nav-items">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
             </nav>
         </header>
     )
@@ -24,7 +31,7 @@ function MainContent() {
 
 function Footer() {
     return (
-        <footer>
+        <footer className="footer">
             <small>© 2023 Griffin development.  All rights reserved</small>
         </footer>
     )
